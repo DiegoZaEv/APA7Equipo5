@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f5e0c5, #e6d2b5);
+    min-height: 100vh;
+}
+
+header {
+    background-color: #8B4513;
+    color: #FFF8DC;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #D2691E;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+button {
+    background-color: #CD853F;
+    border: none;
+    color: #FFF8DC;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #A0522D;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #FFF8DC;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(139, 69, 19, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #8B4513;
+    border-bottom: 2px solid #D2691E;
+    padding-bottom: 0.5rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #D2691E;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #DEB887;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #D2691E;
+    color: #FFF8DC;
+}
+
+tr:nth-child(even) {
+    background-color: #F4E1C9;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF8DC;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+}   
